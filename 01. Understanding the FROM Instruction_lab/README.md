@@ -176,3 +176,14 @@ Remove all unused images:
 ```
 podman image prune -a
 ```
+---
+
+# Hands-On Expected Output:
+
+<img src="lab 1 .png" alt="GitHub Banner" width="100%" />
+
+---
+
+<img src="lab1.1 .png" alt="GitHub Banner" width="100%" />
+
+---
