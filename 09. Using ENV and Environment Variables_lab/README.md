@@ -1,114 +1,133 @@
-Lab 9: Using ENV and Environment Variables with Podman
-🎯 Objectives
+# Lab 9: Using ENV and Environment Variables with Podman
+## 🎯 Objectives
 By the end of this lab, you will be able to:
 
-Define environment variables in a Containerfile
+- Define environment variables in a Containerfile
 
-Override environment variables at runtime using podman run -e
+- Override environment variables at runtime using podman run -e
 
-Implement multi-line environment variables
+- Implement multi-line environment variables
 
-Document environment variables effectively
+- Document environment variables effectively
 
-📌 Prerequisites
-Basic Linux command line knowledge
+## 📌 Prerequisites
+- Basic Linux command line knowledge
 
-Podman installed (version 3.0+ or later)
+- Podman installed (version 3.0+ or later)
 
-A text editor (vim, nano, or VS Code)
+- A text editor (vim, nano, or VS Code)
 
-Internet access (for pulling base images)
+- Internet access (for pulling base images)
 
-⚙️ Lab Setup
+---
+
+## ⚙️ Lab Setup
 Verify Podman installation:
 
-bash
-Copy code
+```
 podman --version
+```
 ✅ Expected output:
 
 nginx
-Copy code
+```
 podman version 3.4.0
+```
 Create a working directory:
 
-bash
-Copy code
+```
 mkdir env-lab && cd env-lab
-📝 Task 1: Setting ENV in Containerfile
-🔹 Subtask 1.1: Create a Basic Containerfile
+```
+---
+
+# 📝 Task 1: Setting ENV in Containerfile
+## 🔹 Subtask 1.1: Create a Basic Containerfile
 Create Containerfile:
 
 Dockerfile
-Copy code
+```
 FROM alpine:latest
 ENV APP_NAME="MyApp" \
     APP_VERSION="1.0.0"
 CMD echo "Running $APP_NAME version $APP_VERSION"
-🔹 Subtask 1.2: Build and Run the Container
+```
+## 🔹 Subtask 1.2: Build and Run the Container
 Build the image:
 
-bash
-Copy code
+```
 podman build -t env-demo .
+```
 Run the container:
 
-bash
-Copy code
+```
 podman run env-demo
+```
 ✅ Expected output:
 
 sql
-Copy code
+```
 Running MyApp version 1.0.0
-📝 Task 2: Overriding ENV at Runtime
-🔹 Subtask 2.1: Override Single Variable
-bash
-Copy code
+```
+---
+
+# 📝 Task 2: Overriding ENV at Runtime
+## 🔹 Subtask 2.1: Override Single Variable
+```
 podman run -e APP_NAME="NewApp" env-demo
+```
 ✅ Expected output:
 
 sql
-Copy code
+```
 Running NewApp version 1.0.0
-🔹 Subtask 2.2: Override Multiple Variables
-bash
-Copy code
+```
+## 🔹 Subtask 2.2: Override Multiple Variables
+```
 podman run -e APP_NAME="ProductionApp" -e APP_VERSION="2.0.0" env-demo
+```
 ✅ Expected output:
 
 sql
-Copy code
+```
 Running ProductionApp version 2.0.0
-📝 Task 3: Using Multi-line ENV
-🔹 Subtask 3.1: Create Multi-line Variables
+```
+---
+
+# 📝 Task 3: Using Multi-line ENV
+## 🔹 Subtask 3.1: Create Multi-line Variables
 Update Containerfile:
 
 Dockerfile
-Copy code
+```
 FROM alpine:latest
 ENV APP_NAME="MyApp" \
     APP_VERSION="1.0.0" \
     APP_DESCRIPTION="This is a multi-line \
 environment variable example"
 CMD echo "$APP_DESCRIPTION"
+```
 Rebuild and run:
 
-bash
-Copy code
+```
 podman build -t multiline-env .
+```
+```
 podman run multiline-env
+```
 ✅ Expected output:
 
 pgsql
-Copy code
+```
 This is a multi-line environment variable example
-📝 Task 4: Documenting Environment Variables
-🔹 Subtask 4.1: Create Documentation
+```
+---
+
+# 📝 Task 4: Documenting Environment Variables
+## 🔹 Subtask 4.1: Create Documentation
 Create a README.md:
 
 markdown
-Copy code
+```
 # Environment Variables
 
 | Variable         | Description              | Default Value   |
@@ -116,32 +135,41 @@ Copy code
 | APP_NAME         | Name of the application  | MyApp           |
 | APP_VERSION      | Application version      | 1.0.0           |
 | APP_DESCRIPTION  | Multi-line description   | (see Containerfile) |
-🔹 Subtask 4.2: Verify Documentation
+```
+## 🔹 Subtask 4.2: Verify Documentation
 Check that your documentation matches the Containerfile definitions.
 
-🔧 Troubleshooting Tips
-If variables don’t update → make sure you use -e before each variable.
+---
 
-For multi-line variables → ensure proper backslash \ placement.
+## 🔧 Troubleshooting Tips
+- If variables don’t update → make sure you use -e before each variable.
 
-Use podman inspect <container> to verify environment variables inside the container.
+- For multi-line variables → ensure proper backslash \ placement.
 
-✅ Conclusion
+- Use podman inspect <container> to verify environment variables inside the container.
+
+---
+
+# ✅ Conclusion
 In this lab, you learned how to:
 
-Define environment variables in Containerfiles
+- Define environment variables in Containerfiles
 
-Override them at runtime with -e
+- Override them at runtime with -e
 
-Implement multi-line environment variables
+- Implement multi-line environment variables
 
-Document environment variables for clarity
+- Document environment variables for clarity
 
 📌 These skills are crucial for containerized application configuration and especially valuable when working with Red Hat OpenShift.
 
-🚀 Next Steps
-Try different base images with ENV variables
+---
 
-Combine ENV with command-line arguments
+## 🚀 Next Steps
+- Try different base images with ENV variables
 
-Explore Podman secrets for handling sensitive data
+- Combine ENV with command-line arguments
+
+- Explore Podman secrets for handling sensitive data
+
+---
