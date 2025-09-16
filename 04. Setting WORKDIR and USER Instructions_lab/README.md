@@ -198,3 +198,19 @@ rm -rf container-security-lab
 ```
 
 ---
+
+ # Hands-On Expected Output:
+
+<img src="lab 4.png" alt="GitHub Banner" width="100%" />
+
+---
+
+<img src="lab 4.1 .png" alt="GitHub Banner" width="100%" />
+
+---
+
+<img src="lab 4..2.png" alt="GitHub Banner" width="100%" />
+
+---
+
+<img src="lab 4.2 .png" alt="GitHub Banner" width="100%" />
