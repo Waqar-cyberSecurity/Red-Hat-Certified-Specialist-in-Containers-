@@ -184,3 +184,23 @@ In this lab, you:
 - Automate image scanning in CI/CD pipelines
 
 ---
+
+ # Hands-On Expected Output:
+
+<img src="lab 5 .png" alt="GitHub Banner" width="100%" />
+
+---
+
+<img src="lab 5.1 ..png" alt="GitHub Banner" width="100%" />
+
+---
+
+<img src="lab 5.2 .png" alt="GitHub Banner" width="100%" />
+
+---
+
+<img src="lab5.3.png" alt="GitHub Banner" width="100%" />
+
+---
+
+<img src="lab 5.4.png" alt="GitHub Banner" width="100%" />
