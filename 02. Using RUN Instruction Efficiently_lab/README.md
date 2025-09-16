@@ -150,3 +150,21 @@ In this lab, you:
 - Try optimizing multi-stage builds
 
 ---
+
+# Hands-On Expected Output:
+
+<img src="lab 2 .png" alt="GitHub Banner" width="100%" />
+
+---
+
+<img src="lab 2.1 .png" alt="GitHub Banner" width="100%" />
+
+---
+
+<img src="2.2 .png" alt="GitHub Banner" width="100%" />
+
+---
+<img src="lab 2.3 .png" alt="GitHub Banner" width="100%" />
+
+
+
