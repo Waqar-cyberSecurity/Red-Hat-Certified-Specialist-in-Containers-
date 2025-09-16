@@ -199,3 +199,11 @@ podman stop -a && podman rm -a
 ```
 
 ---
+
+📚 Additional Resources
+
+- [Podman Documentation](https://docs.podman.io/en/latest/)
+
+- [Dockerfile EXPOSE Reference](https://docs.docker.com/reference/dockerfile/#expose)
+
+- Linux Networking Tools: man ss, man lsof
