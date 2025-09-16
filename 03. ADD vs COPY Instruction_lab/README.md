@@ -69,6 +69,8 @@ Build and run:
 
 ```
 podman build -t copy-demo -f Dockerfile.copy .
+```
+```
 podman run --rm copy-demo
 ```
 ✅ Expected Outcome: file contents printed.
@@ -96,6 +98,8 @@ Build and run:
 
 ```
 podman build -t add-demo -f Dockerfile.add .
+```
+```
 podman run --rm add-demo
 ```
 ✅ Expected Outcome: Same as COPY.
@@ -123,6 +127,8 @@ Build and run:
 
 ```
 podman build -t add-extract-demo -f Dockerfile.add-extract .
+```
+```
 podman run --rm add-extract-demo
 ```
 ✅ Expected Outcome: archive auto-extracted.
@@ -144,6 +150,8 @@ Build and run:
 
 ```
 podman build -t add-url-demo -f Dockerfile.add-url .
+```
+```
 podman run --rm add-url-demo
 ```
 ✅ Expected Outcome: contents of remote file printed.
@@ -185,6 +193,8 @@ Modify file & rebuild:
 
 ```
 echo "Version 2" > version.txt
+```
+```
 podman build -t cache-demo -f Dockerfile.cache .
 ```
 Repeat same with ADD.
@@ -266,3 +276,23 @@ podman rmi copy-demo add-demo add-extract-demo add-url-demo cache-demo security-
 rm -f testfile.txt archive.tar.gz badfile bad.tar.gz version.txt
 ```
 ---
+
+ # Hands-On Expected Output:
+
+<img src="lab3 .png" alt="GitHub Banner" width="100%" />
+
+---
+
+<img src="3.1 .png" alt="GitHub Banner" width="100%" />
+
+---
+
+<img src="3.2.png" alt="GitHub Banner" width="100%" />
+
+---
+
+<img src="lab 3.3.png" alt="GitHub Banner" width="100%" />
+
+---
+
+<img src="lab 3.4.png" alt="GitHub Banner" width="100%" />
