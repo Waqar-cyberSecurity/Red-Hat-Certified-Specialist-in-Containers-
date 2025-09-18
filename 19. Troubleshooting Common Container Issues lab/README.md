@@ -157,3 +157,17 @@ Verify that all issues are resolved.
 - [Podman Documentation](https://docs.podman.io/en/latest/)
 
 - [SELinux Troubleshooting Guide](https://access.redhat.com/articles/2191331)
+
+---
+
+# Hands-On Expected Output:
+
+<img src="lab19.png" alt="GitHub Banner" width="100%" />
+
+---
+
+<img src="lab19.1.png" alt="GitHub Banner" width="100%" />
+
+---
+
+<img src="lab19.2.png" alt="GitHub Banner" width="100%" />
