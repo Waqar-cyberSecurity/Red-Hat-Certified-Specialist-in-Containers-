@@ -197,6 +197,6 @@ podman secret rm db_password
 
 ## 📚 Additional Resources
 
-- [Podman Documentation]()
-- [Compose Specification]()
-- [Kubernetes YAML Reference]()
+- [Podman Documentation](https://docs.podman.io/en/latest/)
+- [Compose Specification](https://compose-spec.io/)
+- [Kubernetes YAML Reference](https://kubernetes.io/docs/reference/kubernetes-api/workload-resources/)
