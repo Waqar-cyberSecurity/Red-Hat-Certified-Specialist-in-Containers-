@@ -280,3 +280,9 @@ podman logs <container_name>
 - Implement health checks in your Podman Compose file.
 
 - Set up monitoring with Prometheus and Grafana.
+
+---
+
+# Hands-On Expected Output:
+
+<img src="lab20.png" alt="GitHub Banner" width="100%" />
