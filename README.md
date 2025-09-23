@@ -1,6 +1,6 @@
 # Red Hat Certified Specialist in - Containers Lab Summary
 
-<img src="https://github.com/Waqar-cyberSecurity/Red-Hat-Certified-Specialist-in-Containers-/blob/main/RwdHat.png" alt="logo" width="800"/>
+<img src="https://github.com/Waqar-cyberSecurity/Red-Hat-Certified-Specialist-in-Containers-/blob/main/RwdHat.png" alt="logo" width="700"/>
 
 
 # PDF Resource
